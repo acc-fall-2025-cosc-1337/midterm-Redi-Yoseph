@@ -10,3 +10,10 @@ TEST_CASE("test")
 {
 	REQUIRE(test_config() == true);
 }
+TEST_CASE("factorial values")
+{
+    REQUIRE(get_factorial_sequence(3) == 6);
+    REQUIRE(get_factorial_sequence(4) == 24);
+    REQUIRE(get_factorial_sequence(5) == 120);
+    REQUIRE(get_factorial_sequence(6) == 720);
+}
